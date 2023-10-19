@@ -1,0 +1,38 @@
+* {
+    font-size: 16px;
+}
+
+body {
+    background-color: var(--color-bg);
+    color: var(--color-fg);
+    min-height: 100vh;
+    font-family: 'Gabarito', cursive;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 2.25rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+
+button {
+    font-weight: bold;
+    /* padding: 0.5rem 1rem; */
+    transition: all var(--global-transition-time) ease-in-out;
+    /* border-radius: 2rem; */
+    cursor: pointer;
+    color: var(--color-fg);
+    background-color: var(--color-bg);
+    /* border: 0.25rem solid var(--color-fg); */
+}
