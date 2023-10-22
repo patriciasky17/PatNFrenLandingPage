@@ -1,9 +1,11 @@
 [data-theme="light"] {
     --color-bg: #ffffff;
     --color-fg: #000000;
+    --primary: #ff0000;
 }
 
 [data-theme="dark"] {
     --color-bg: #000000;
     --color-fg: #ffffff;
+    --primary: #ff0000;
 }
