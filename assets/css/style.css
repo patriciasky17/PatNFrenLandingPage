@@ -7,7 +7,12 @@ body {
     color: var(--color-fg);
     min-height: 100vh;
     font-family: 'Gabarito', cursive;
+    background-image: url(../img/new/Wood.png);
+    background-position: top;
+    background-size: cover;
+    background-repeat:repeat-y;
 }
+
 
 button {
     font-weight: bold;
@@ -25,7 +30,7 @@ footer .social-media a{
     background-color: var(--primary);
     padding: 6px 12px;
     border-radius: 50%;
-    color: var(--background);
+    color: #FFFFFF;
     transition: all 0.2s ease-in-out;
 }
 
@@ -42,7 +47,6 @@ footer .social-media a i{
         font-size: 16px;
     }
 }
-
 /* footer .social-media a .fa-solid{
     padding: 0 2px;
     font-size: 20px;

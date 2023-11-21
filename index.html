@@ -20,191 +20,218 @@
 </head>
 
 
-<body class="max-w-full bg-[#F1FAFF]">
-    <header class="w-100 p-10">
-        <nav class="w-100 flex justify-between items-center">
-            <div class="logo basis-1/3 text-start">
+<body class="max-w-[1440px] bg-[#F1FAFF] m-auto">
+    <header class="w-100 max-w-[1440px] px-20 py-4">
+        <nav class="w-100 flex justify-between items-center ">
+            <div class="logo text-start">
                 <a href="#home">
-                    <h4>Pat 'n Fren</h4>
+                    <img class="max-w-[100px]" src="./assets/img/New/MemoTalesLogo.png" alt="Logo MemoTales">
                 </a>
             </div>
 
-            <ul class="gap-10 basis-1/3 justify-center items-center sm:flex hidden">
+            <ul class="gap-10 justify-center items-center sm:flex hidden">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#feature">Feature</a></li>
             </ul>
-
-            <div class="light-dark-mode basis-1/3 text-end">
-                <button type="button" data-theme-toggle aria-label="Change to light theme">Change to light
-                    theme</button>
-            </div>
         </nav>
     </header>
 
-    <main class="w-100">
-        <section id="home" class="text-center flex flex-col items-center">
-            <div class="flex flex-col gap-8 items-center">
-                <div class="title-and-description flex flex-col gap-2">
-                    <h1 class="text-h1">Knit Memories With Your Child</h1>
-                    <h3 class="text-h3">Childhood can never happen again, it is important to create unforgettable
-                        memories with your children</h3>
-                </div>
-                <a href="#" class="w-40">
-                    <img src="./assets/img/DownloadOnTheAppStore.png" alt="Download on the App Store">
-                </a>
+    <section id="home" class="flex lg:flex-row flex-col lg:text-left text-center justify-center lg:gap-0 gap-20">
+        <div class="flex flex-col gap-8 pt-20 pl-20 pr-24 lg:items-start lg:justify-left items-center">
+            <div class="title-and-description flex flex-col gap-2">
+                <h1 class="text-h1 font-bold">Knit Memories With Your Child</h1>
+                <p class="text-p font-normal">Childhood can never happen again, it is important to create unforgettable
+                    memories with your children</>
             </div>
-
-            <div class="hero-image relative w-full h-100 flex flex-col items-center">
-                <div class="lg:w-[500px] md:w-[350px] sm:[300px] w-[200px] absolute bottom-[10px]">
-                    <img class="relative w-100 h-auto" src="./assets/img/Ipad.png" alt="Ipad">
+            <a href="#" class="px-2 py-2 rounded-xl bg-primary">
+                <div
+                    class="content flex items-center gap-4 border border-yellowish border-2 border-dashed rounded-lg px-6 py-3 text-white">
+                    <i class="bi bi-apple"></i>
+                    <p class="text-normal">Download on App Store</p>
                 </div>
-                <img class="relative w-100 z-1" src="./assets/img/KikiPatRiko.png" alt="Kiki, Pat, Riko">
-                <div class="absolute bottom-0 w-full">
-                    <svg viewBox="0 0 1439 187" fill="none" class="w-full h-100" 
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path 
-                            d="M1440 187C1133.01 187 1117.65 187 720 187C322.355 187 367.375 187 0 187C0 83.7228 322.355 0 720 0C1117.65 0 1440 83.7228 1440 187Z"
-                            fill="#E8E8E8" />
-                    </svg>
-                </div>
-
-            </div>
-
-        </section>
-
-        <section id="about" class="text-center flex flex-col items-center bg-[#E8E8E8]">
-            <div class="flex flex-col gap-8 items-center z-10">
-                <div class="title-and-description flex flex-col gap-2">
-                    <h2 class="text-h2">Exploring through Storytelling</h2>
-                    <p class="text-p max-w-[800px] px-10">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Commodi dolorum eum voluptatibus, ducimus
-                        minus vel debitis magni eligendi accusamus omnis veritatis placeat excepturi quia odio
-                        blanditiis suscipit ex, earum
-                        animi. Perspiciatis, nobis nam? </p>
-                </div>
-                <div class="about-image">
-                    <img class="w-100" src="./assets/img/KikiPatRiko.png" alt="Kiki, Pat, Riko">
-                </div>
-            </div>
-        </section>
-
-        <section id="feature" class="flex flex-col items-center bg-[#E8E8E8] -mt-1">
-            <div class="flex flex-col gap-8 items-center z-10">
-                <div class="title-and-description text-center flex flex-col gap-2">
-                    <h2 class="text-h2">More than a storybook or a game</h2>
-                    <p class="text-p max-w-[800px] px-10">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Commodi dolorum eum voluptatibus, ducimus
-                        minus vel debitis magni eligendi accusamus omnis veritatis placeat excepturi quia odio
-                        blanditiis suscipit ex, earum
-                        animi. Perspiciatis, nobis nam? </p>
-                </div>
-
-                <div class="feature-items px-10 flex flex-col gap-4">
-                    <div class="feature-item grid grid-cols-12">
-                        <div class="number-and-feature-explanation lg:col-span-6 col-span-12 flex lg:flex-row flex-col lg:items-start items-center lg:text-start text-center gap-4 lg:order-1 order-2">
-                            <div class="static w-[48px] h-[48px] number px-6 py-3 rounded-full bg-white flex justify-center items-center">
-                                <p class="bg-white flex justify-center items-center">1</p>
-                            </div>
-                            <div class="feature-explanation py-2 flex flex-col gap-4 ">
-                                <div class="title">
-                                    <h3 class="text-h3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </h3>
-                                </div>
-                                <div class="description">
-                                    <p class="text-p">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aliquam in odio
-                                        nec fermentum. Quisque interdum suscipit arcu. Mauris ac nibh at tellus mollis
-                                        pretium. Fusce a sagittis mauris. Integer eget dictum mauris. In sit amet nunc
-                                        eu enim efficitur bibendum. Sed interdum mauris eget nibh ultrices, sit amet
-                                        malesuada lectus fermentum.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="lg:col-span-6 col-span-12 feature-image lg:order-2 order-1">
-                            <img class="w-100" src="./assets/img/KikiPatRiko.png" alt="Kiki, Pat, Riko">
-                        </div>
-                    </div>
-
-                    <div class="feature-item grid grid-cols-12">
-                        <div class="number-and-feature-explanation lg:col-span-6 col-span-12 flex lg:flex-row flex-col lg:items-start items-center lg:text-start text-center gap-4 lg:order-1 order-2">
-                            <div class="static w-[48px] h-[48px] number px-6 py-3 rounded-full bg-white flex justify-center items-center">
-                                <p class="bg-white flex justify-center items-center">2</p>
-                            </div>
-                            <div class="feature-explanation py-2 flex flex-col gap-4 ">
-                                <div class="title">
-                                    <h3 class="text-h3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </h3>
-                                </div>
-                                <div class="description">
-                                    <p class="text-p">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aliquam in odio
-                                        nec fermentum. Quisque interdum suscipit arcu. Mauris ac nibh at tellus mollis
-                                        pretium. Fusce a sagittis mauris. Integer eget dictum mauris. In sit amet nunc
-                                        eu enim efficitur bibendum. Sed interdum mauris eget nibh ultrices, sit amet
-                                        malesuada lectus fermentum.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="lg:col-span-6 col-span-12 feature-image lg:order-2 order-1">
-                            <img class="w-100" src="./assets/img/KikiPatRiko.png" alt="Kiki, Pat, Riko">
-                        </div>
-                    </div>
-
-                    <div class="feature-item grid grid-cols-12">
-                        <div class="number-and-feature-explanation lg:col-span-6 col-span-12 flex lg:flex-row flex-col lg:items-start items-center lg:text-start text-center gap-4 lg:order-1 order-2">
-                            <div class="static w-[48px] h-[48px] number px-6 py-3 rounded-full bg-white flex justify-center items-center">
-                                <p class="bg-white flex justify-center items-center">3</p>
-                            </div>
-                            <div class="feature-explanation py-2 flex flex-col gap-4 ">
-                                <div class="title">
-                                    <h3 class="text-h3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </h3>
-                                </div>
-                                <div class="description">
-                                    <p class="text-p">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aliquam in odio
-                                        nec fermentum. Quisque interdum suscipit arcu. Mauris ac nibh at tellus mollis
-                                        pretium. Fusce a sagittis mauris. Integer eget dictum mauris. In sit amet nunc
-                                        eu enim efficitur bibendum. Sed interdum mauris eget nibh ultrices, sit amet
-                                        malesuada lectus fermentum.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="lg:col-span-6 col-span-12 feature-image lg:order-2 order-1">
-                            <img class="w-100" src="./assets/img/KikiPatRiko.png" alt="Kiki, Pat, Riko">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="lastSection" class="w-full relative flex flex-col py-20 items-center bg-[#E8E8E8]">
-            <img class="relative xl:w-100 w-90 xl:left-16 left-2 md:bottom-0 sm:-bottom-10 -bottom-12 z-1 " src="./assets/img/KikiPatRikoVector.png" alt="Kiki, Pat, Riko">
-            <div class="absolute bottom-0  w-full">
-                <svg viewBox="0 0 1440 340" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-100" >
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1440 340V0C1440 103.277 1117.65 187 720 187C322.355 187 0 103.277 0 0V340H1440Z" fill="#F1FAFF"/>
-                </svg>
-            </div>
-        </section>
-
-        <section id="download" class="px-10 flex flex-col items-center gap-4 bg-[#F1FAFF] lg:text-start text-center">
-            <h2 class="text-h2">Download App Name</h2>
-            <p class="text-p">Knit Memories with Your Child by using Pat 'n Fren, Where Every Stitch Creates Cherished Memories!</p>
-            <a href="#" class="w-40">
-                <img src="./assets/img/DownloadOnTheAppStore.png" alt="Download on the App Store">
             </a>
-        </section>
+        </div>
+        <div class="hero-image flex lg:justify-start justify-end">
+            <img src="./assets/img/New/AlbumBookHero.png" alt="Album Book">
+        </div>
 
+    </section>
+
+    <main class="w-100 bg-primary py-1 text-black">
+        <div class="dashed border border-dashed border-t-2 border-b-2 border-l-0 border-r-0 border-yellowish py-1">
+            <div class="bg-cream flex flex-col gap-20">
+
+                <section id="about" class="text-center bg-[#FFEBCB] relative">
+                    <img class="-z-100000000 absolute right-0 top-0 max-h-[300px]"
+                        src="./assets/img/New/FlipBookUpper.png" alt="">
+                    <div class="px-20 pt-20 flex flex-col items-center gap-20">
+                        <div class="title-and-desc flex flex-col gap-4">
+                            <h2 class="text-h2 text-primary font-semibold">Introducing MemoTales,</h2>
+                            <p class="text-p">the <span class=" text-p font-semibold">story-activity book</span> that
+                                transcends the ordinary.</p>
+                        </div>
+
+                        <div class="3words flex gap-8 items-start">
+                            <p class="text-h3 py-2 px-10 bg-primary text-white rounded-lg -rotate-3">Story</p>
+                            <p class="text-h3 py-2 px-10 bg-primary text-white rounded-lg -mt-2">Interaction</p>
+                            <p class="text-h3 py-2 px-10 bg-primary text-white rounded-lg rotate-3">Learning</p>
+                        </div>
+
+                        <p class="text-p font-normal">3 words that best describe <span
+                                class=" text-p font-semibold">MemoTales</span> as a gateway to unforgettable moments
+                            between parents and their
+                            children. Dive into a world of enchanting stories, expressive characters, and educational
+                            mini-games that ignite
+                            collaboration and fun. Watch as your child's cognitive and motor skills flourish, all while
+                            creating cherished
+                            memories together.</p>
+                    </div>
+                </section>
+
+                <section id="background" class="px-20 text-center">
+                    <img src="./assets/img/New/Polaroids.png" alt="">
+                    <div class="title-and-desc flex flex-col gap-4">
+                        <h2 class="text-h2 text-primary font-semibold">Your relationship with child matters...</h2>
+                        <p class="text-p">
+                            <span class=" text-p font-semibold">MemoTales</span> emerged from a <span
+                            class="text-p font-semibold">passion for enhancing parent-child relationships</span> and <span
+                            class="text-p font-semibold">promoting childhood development</span>. Recognizing the immense influence of parent-child interactions, we
+                            crafted an app for <span class=" text-p font-semibold">interactive storytelling</span> to <span class="text-p font-semibold">educate, entertain</span> and <span class=" text-p font-semibold">foster relationships.</span>
+
+                            <br>
+                            <br>
+
+                            Our app, designed with <span class=" text-p font-semibold">care and expertise</span>, offers <span class=" text-p font-semibold">engaging characters, storylines,</span> and
+                            <span class=" text-p font-semibold">mini-games</span> for collaborative parent-child adventures, with the goal of seeing families
+                            worldwide share <span class=" text-p font-semibold">smiles, laughter,</span> and <span class=" text-p font-semibold"></span>learning.</span>
+                        </p>
+                    </div>
+                </section>
+
+                <section id="feature" class="flex flex-col items-center gap-10">
+                    <h2 class="text-h2 text-primary font-semibold">App Preview</h2>
+                    <div class="flex flex-wrap gap-10 justify-center">
+                        <div class="preview flex flex-col items-center">
+                            <p class="rounded-t-xl bg-primary text-white text-normal py-4 px-10">Book-like Interface</p>
+                            <img class="max-w-[600px]" src="./assets/img/PreviewApp/FlipBookView.png" alt="Book Like Interface">
+                        </div>
+
+                        <div class="preview flex flex-col items-center">
+                            <p class="rounded-t-xl bg-primary text-white text-normal py-4 px-10">Story Reading Guidance</p>
+                            <img class="max-w-[600px]" src="./assets/img/PreviewApp/GuideView2.png" alt="Guide in Story">
+                        </div>
+
+                        <div class="preview flex flex-col items-center">
+                            <p class="rounded-t-xl bg-primary text-white text-normal py-4 px-10">Story-Activity Based</p>
+                            <img class="max-w-[600px]" src="./assets/img/PreviewApp/DragAndDrop.png" alt="Drag And Drop (Story Sequencing)">
+                        </div>
+
+                        <div class="preview flex flex-col items-center">
+                            <p class="rounded-t-xl bg-primary text-white text-normal py-4 px-10">Story-Driven Discussion</p>
+                            <img class="max-w-[600px]" src="./assets/img/PreviewApp/CardView.png" alt="Question and Answer Card View">
+                        </div>
+
+                        <div class="preview flex flex-col items-center">
+                            <p class="rounded-t-xl bg-primary text-white text-normal py-4 px-10">Capture Moment Together</p>
+                            <img class="max-w-[600px]" src="./assets/img/PreviewApp/AlbumView.png" alt="Album View">
+                        </div>
+                    </div>
+                </section>
+
+                <section id="developer" class="px-20 text-center flex flex-col gap-10">
+                    <div class="title-and-desc flex flex-col gap-4">
+                        <h2 class="text-h2 text-primary font-semibold">Meet The Developer!</h2>
+                        <p class="text-p">
+                            The people behind this app!
+                        </p>
+                    </div>
+
+                    <div class="flex flex-wrap gap-10 justify-center">
+                        <div class="polaroid px-4 pt-4 pb-8 bg-white flex flex-col gap-4 rotate-2">
+                            <img src="./assets/img/Developer/Fariz.jpeg" alt="Ahmad Fariz" class="max-w-[200px]">
+                            <div class="name-and-role">
+                                <h3 class="text-p">Ahmad Fariz</h3>
+                                <p class="text-normal">Project Manager</p>
+                            </div>
+                        </div>
+
+                        <div class="polaroid px-4 pt-4 pb-8 bg-white flex flex-col gap-4 -rotate-3">
+                            <img src="./assets/img/Developer/Patricia.jpeg" alt="Patricia Ho" class="max-w-[200px]">
+                            <div class="name-and-role">
+                                <h3 class="text-p">Patricia Ho</h3>
+                                <p class="text-normal">Tech Lead</p>
+                            </div>
+                        </div>
+
+                        <div class="polaroid px-4 pt-4 pb-8 bg-white flex flex-col gap-4 rotate-2">
+                            <img src="./assets/img/Developer/Stella.jpeg" alt="Stella Feliciana" class="max-w-[200px]">
+                            <div class="name-and-role">
+                                <h3 class="text-p">Stella Feliciana</h3>
+                                <p class="text-normal">Design Lead</p>
+                            </div>
+                        </div>
+
+                        <div class="polaroid px-4 pt-4 pb-8 bg-white flex flex-col gap-4 -rotate-3">
+                            <img src="./assets/img/Developer/William.jpeg" alt="William Kindlien" class="max-w-[200px]">
+                            <div class="name-and-role">
+                                <h3 class="text-p">William Kindlien</h3>
+                                <p class="text-normal">Tech</p>
+                            </div>
+                        </div>
+
+                        <div class="polaroid px-4 pt-4 pb-8 bg-white flex flex-col gap-4 rotate-2">
+                            <img src="./assets/img/Developer/Dinda.jpeg" alt="Dinda Alifiya" class="max-w-[200px]">
+                            <div class="name-and-role">
+                                <h3 class="text-p">Dinda Alifiya</h3>
+                                <p class="text-normal">Design</p>
+                            </div>
+                        </div>
+
+                        <div class="polaroid px-4 pt-4 pb-8 bg-white flex flex-col gap-4 -rotate-3">
+                            <img src="./assets/img/Developer/Octa.jpeg" alt="Octavian" class="max-w-[200px]">
+                            <div class="name-and-role">
+                                <h3 class="text-p">Octavian</h3>
+                                <p class="text-normal">Tech</p>
+                            </div>
+                        </div>
+
+                        <div class="polaroid px-4 pt-4 pb-8 bg-white flex flex-col gap-4 rotate-2">
+                            <img src="./assets/img/Developer/Vicky.jpeg" alt="Vicky Goh" class="max-w-[200px]">
+                            <div class="name-and-role">
+                                <h3 class="text-p">Vicky Goh</h3>
+                                <p class="text-normal">Design</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+                <section id="download" class="p-10 flex flex-col gap-8 items-center text-center relative">
+                    <img class="absolute bottom-0 right-0 max-h-[300px]" src="./assets/img/New/FlipBookBelow.png" alt="Flip Book">
+                    <div class="flex flex-col gap-4">
+                        <h2 class="text-h2">Download <span class="text-h2 font-semibold text-primary">MemoTales</span></h2>
+                        <p class="text-p">Knit Memories with Your Child by using <span class="text-p text-primary text-bold"></span>
+                            MemoTales, Where Every Stitch Creates
+                            Cherished Memories!</p>
+                    </div>
+                        <a href="#" class="px-2 py-2 rounded-xl bg-primary text-white">
+                            <div
+                                class="content flex items-center gap-4 border border-yellowish border-2 border-dashed rounded-lg px-6 py-3">
+                                <i class="bi bi-apple"></i>
+                                <p class="text-normal">Download on App Store</p>
+                            </div>
+                        </a>
+                </section>
+            </div>
+        </div>
     </main>
 
-    <footer class="md:p-10 py-10 px-0">
-        <div class="sm:grid sm:grid-cols-12 lg:text-start text-center flex justify-center lg:flex-row flex-col gap-8">
+    <footer class="flex flex-col">
+        <div
+            class="sm:grid sm:grid-cols-12 lg:text-start text-center flex justify-center lg:flex-row flex-col gap-8 md:p-10 py-10 px-0">
             <div class="lg:col-span-4 col-span-12 flex flex-col gap-3">
-                <h4>Pat 'n Fren</h4>
+                <img class="max-w-[100px]" src="./assets/img/New/MemoTalesLogo.png" alt="Logo MemoTales">
                 <p>© Pat ‘n Fren 2023 </p>
             </div>
             <div class="lg:col-span-4 col-span-12 flex flex-col gap-3">
@@ -225,38 +252,30 @@
 
 
     <script src="./assets/js/index.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        clifford: '#da373d',
-                        primary: '#65AAFF',
+                        primary: '#EA5C26',
+                        yellowish: '#FFDA7D',
+                        cream: '#FFEBCB',
+
+                        black: '#000000',
+                        white: '#FFFFFF',
                     }
                 },
                 fontSize: {
                     'h1': '4rem',
                     'h2': '2.25rem',
-                    'h3': '1.25rem',
-                    'p': '1rem',
-                    'normal': '1rem',
+                    'h3': '2rem',
+                    'p': '1.5rem',
+                    'normal': '1.2rem',
                     'subtitle': '0.875rem',
                 },
             }
         }
     </script>
-    <!-- <script>
-        // Also can pass in optional settings block
-        var rellax = new Rellax('.rellax', {
-            speed: -2,
-            center: false,
-            wrapper: null,
-            round: true,
-            vertical: true,
-            horizontal: false
-        });
-    </script> -->
 
 </body>
 
