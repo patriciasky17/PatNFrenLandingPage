@@ -13,6 +13,9 @@ body {
     background-repeat:repeat-y;
 }
 
+a {
+    cursor: pointer;
+}
 
 button {
     font-weight: bold;

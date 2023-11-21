@@ -20,8 +20,8 @@
 </head>
 
 
-<body class="max-w-[1440px] bg-[#F1FAFF] m-auto">
-    <header class="w-100 max-w-[1440px] px-20 py-4">
+<body class="bg-[#F1FAFF]">
+    <header class="w-100 max-w-[1440px] m-auto px-20 py-4">
         <nav class="w-100 flex justify-between items-center ">
             <div class="logo text-start">
                 <a href="#home">
@@ -37,7 +37,7 @@
         </nav>
     </header>
 
-    <section id="home" class="flex lg:flex-row flex-col lg:text-left text-center justify-center lg:gap-0 gap-20">
+    <section id="home" class="max-w-[1440px] m-auto flex lg:flex-row flex-col lg:text-left text-center justify-center lg:gap-0 gap-20">
         <div class="flex flex-col gap-8 pt-20 pl-20 pr-24 lg:items-start lg:justify-left items-center">
             <div class="title-and-description flex flex-col gap-2">
                 <h1 class="text-h1 font-bold">Knit Memories With Your Child</h1>
@@ -53,7 +53,7 @@
             </a>
         </div>
         <div class="hero-image flex lg:justify-start justify-end">
-            <img src="./assets/img/New/AlbumBookHero.png" alt="Album Book">
+            <img src="./assets/img/New/AlbumBookHero.png" alt="Album Book" class="w-100">
         </div>
 
     </section>
@@ -65,7 +65,7 @@
                 <section id="about" class="text-center bg-[#FFEBCB] relative">
                     <img class="-z-100000000 absolute right-0 top-0 max-h-[300px]"
                         src="./assets/img/New/FlipBookUpper.png" alt="">
-                    <div class="px-20 pt-20 flex flex-col items-center gap-20">
+                    <div class="px-20 pt-20 flex flex-col items-center gap-20 max-w-[1440px] m-auto">
                         <div class="title-and-desc flex flex-col gap-4">
                             <h2 class="text-h2 text-primary font-semibold">Introducing MemoTales,</h2>
                             <p class="text-p">the <span class=" text-p font-semibold">story-activity book</span> that
@@ -89,7 +89,7 @@
                     </div>
                 </section>
 
-                <section id="background" class="px-20 text-center">
+                <section id="background" class="max-w-[1440px] m-auto px-20 text-center">
                     <img src="./assets/img/New/Polaroids.png" alt="">
                     <div class="title-and-desc flex flex-col gap-4">
                         <h2 class="text-h2 text-primary font-semibold">Your relationship with child matters...</h2>
@@ -109,7 +109,7 @@
                     </div>
                 </section>
 
-                <section id="feature" class="flex flex-col items-center gap-10">
+                <section id="feature" class="max-w-[1440px] m-auto  flex flex-col items-center gap-10">
                     <h2 class="text-h2 text-primary font-semibold">App Preview</h2>
                     <div class="flex flex-wrap gap-10 justify-center">
                         <div class="preview flex flex-col items-center">
@@ -139,7 +139,7 @@
                     </div>
                 </section>
 
-                <section id="developer" class="px-20 text-center flex flex-col gap-10">
+                <section id="developer" class="max-w-[1440px] m-auto px-20 text-center flex flex-col gap-10">
                     <div class="title-and-desc flex flex-col gap-4">
                         <h2 class="text-h2 text-primary font-semibold">Meet The Developer!</h2>
                         <p class="text-p">
@@ -207,21 +207,26 @@
                     </div>
                 </section>
 
-                <section id="download" class="p-10 flex flex-col gap-8 items-center text-center relative">
+                <section id="download" class="p-10 text-center relative">
                     <img class="absolute bottom-0 right-0 max-h-[300px]" src="./assets/img/New/FlipBookBelow.png" alt="Flip Book">
-                    <div class="flex flex-col gap-4">
-                        <h2 class="text-h2">Download <span class="text-h2 font-semibold text-primary">MemoTales</span></h2>
-                        <p class="text-p">Knit Memories with Your Child by using <span class="text-p text-primary text-bold"></span>
-                            MemoTales, Where Every Stitch Creates
-                            Cherished Memories!</p>
+                    <div class="max-w-[1440px] m-auto flex flex-col gap-8">
+                        <div class="flex flex-col gap-4">
+                            <h2 class="text-h2">Download <span class="text-h2 font-semibold text-primary">MemoTales</span></h2>
+                            <p class="text-p">Knit Memories with Your Child by using <span class="text-p text-primary text-bold"></span>
+                                MemoTales, Where Every Stitch Creates
+                                Cherished Memories!</p>
+                        </div>
+                        <div class="flex justify-center">
+                            <a href="#" class="px-2 py-2 rounded-xl bg-primary text-white">
+                                <div
+                                    class="content flex items-center gap-4 border border-yellowish border-2 border-dashed rounded-lg px-6 py-3">
+                                    <i class="bi bi-apple"></i>
+                                    <p class="text-normal">Download on App Store</p>
+                                </div>
+                            </a>
+                        </div>
+                            
                     </div>
-                        <a href="#" class="px-2 py-2 rounded-xl bg-primary text-white">
-                            <div
-                                class="content flex items-center gap-4 border border-yellowish border-2 border-dashed rounded-lg px-6 py-3">
-                                <i class="bi bi-apple"></i>
-                                <p class="text-normal">Download on App Store</p>
-                            </div>
-                        </a>
                 </section>
             </div>
         </div>
@@ -230,13 +235,13 @@
     <footer class="flex flex-col">
         <div
             class="sm:grid sm:grid-cols-12 lg:text-start text-center flex justify-center lg:flex-row flex-col gap-8 md:p-10 py-10 px-0">
-            <div class="lg:col-span-4 col-span-12 flex flex-col gap-3">
+            <div class="lg:col-span-4 col-span-12 flex flex-col lg:items-start items-center gap-3">
                 <img class="max-w-[100px]" src="./assets/img/New/MemoTalesLogo.png" alt="Logo MemoTales">
                 <p>© Pat ‘n Fren 2023 </p>
             </div>
             <div class="lg:col-span-4 col-span-12 flex flex-col gap-3">
                 <h4>Email</h4>
-                <a href="mailto:hello@gmail.com">hello@gmail.com</a>
+                <a href="mailto:memotalesteam@gmail.com">memotalesteam@gmail.com</a>
             </div>
             <div class="lg:col-span-4 col-span-12 flex flex-col gap-3">
                 <h4>Find us on</h4>
