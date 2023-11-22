@@ -18,6 +18,7 @@
 
 html{
     width: 100vw;
+    overflow-x: hidden;
 }
 
 body {
@@ -27,7 +28,7 @@ body {
     font-family: 'Gabarito', cursive;
     background-image: url(../img/new/Wood.png);
     background-position: top;
-    background-size: cover;
+    background-size: contain;
     background-repeat:repeat-y;
 }
 
@@ -55,6 +56,19 @@ footer .social-media a{
     transition: all 0.2s ease-in-out;
 }
 
+.hero-image {
+    /* margin-right: -50px; */
+    position: relative;
+    right: -15%;
+}
+
+@media screen and (max-width: 1024px) {
+    .hero-image {
+        margin-right: 0px;
+        right: 0;
+    }
+}
+
 footer .social-media a i{
     font-size: 20px;
 }
@@ -68,7 +82,3 @@ footer .social-media a i{
         font-size: 16px;
     }
 }
-/* footer .social-media a .fa-solid{
-    padding: 0 2px;
-    font-size: 20px;
-} */
